@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="icon" href="res/2.png" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+
+<body>
+  <header  >
+    <nav class="navbar navbar-light bg-light justify-content-between">
+      <a class="navbar-brand" >vacance</a>
+      <form class="form-inline" >
+        <span class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           mon compte
+          </button>
+        <span class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <a class="dropdown-item" href="client.html">agenda</a>
+          <a class="dropdown-item" href="economie.html">planification</a>
+        </span>
+      </span>
+      </form>
+    </nav>
+    
+    <nav class="navbar">
+      <ul class="nav justify-content-center"  >
+        <li class="nav-item" >
+          <a class="nav-link active" href="index.html" >home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="maison lux.html" >maison d hote</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hhh.html" >shopping</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html" >Parc</a>
+        </li>
+      </ul>
+    </nav>
+    </header>
+<div class="org">
+    <img src="res/argent.jpg" class="img-fluid" alt="Responsive image" style="width: 800px;height: 500px;">
+    <div>
+     
+<table class="table">
+  <thead>
+  <th scope="col">la somme que vous allez ajouter</th>
+  </thead>
+  <tbody>
+     <td><div class="input-group-prepend">
+      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="sum1">
+      <input type="button" value="+" onclick="cal()">
+          
+          </div>
+        </td>
+    </tbody>
+  </table>
+  
+<table class="table">
+  <thead>
+    <tr>
+    
+      <th scope="col">la somme que vous avez deja </th>
+</thead>
+<tbody>
+    <tr>
+      
+      <td>  
+      <span id="sum"></span></td>
+  </tbody>
+</table>
+<table class="table">
+<thead>
+<th scope="col">la somme que vous svoulez avoir a la fin </th>
+</thead>
+<tbody>
+   <td><div class="input-group-prepend">
+          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="txtnum1">
+          <input type="button" value="ok" onclick="sumvalues()">
+        </div>
+      </td>
+  </tbody>
+</table>
+</form>
+</div>
+</div>
+<div class="eco">
+  <h1 > Luxe</h1>
+ 
+  <div >
+    <img src="res/10.png" alt="erreur" >
+    <p>transport</p>
+    <span id="tranlux"></span>
+  </div>
+  <div >
+    <img src="res/50_percent-512.png" alt="erreur" >
+      <p  >Logement</p>
+      <span id="loglux"></span>
+  </div>
+  <div >
+    <img src="res/20.png" alt="erreur" >
+      <p  >argent de poche</p>
+      <span id="arglux"></span>
+  </div>
+  <div >
+    <img src="res/10.png" alt="erreur" >
+      <p >nourriture</p>
+      <span id="nourlux"></span>
+  </div>
+  <div >
+    <img src="res/10.png" alt="erreur" >
+      <p  >préparation</p>
+      <span id="preplux"></span>
+  </div>
+ </div>
+ <div class="eco">
+  <h1 >Shopping </h1>
+  <br>
+  <div >
+    <img src="res/10.png" alt="erreur" >
+    <p  >transport</p>
+    <span id="transhop"></span>
+  </div>
+  <div >
+    <img src="res/20.png" alt="erreur" >
+      <p  >Logement</p>
+      <span id="logshop"></span>
+  </div>
+  <div >
+    <img src="res/50_percent-512.png" alt="erreur" >
+      <p  >argent de poche</p>
+      <span id="argshop"></span>
+  </div>
+  <div >
+    <img src="res/10.png" alt="erreur" >
+      <p >nourriture</p>
+      <span id="nourshop"></span>
+  </div>
+  <div >
+    <img src="res/10.png" alt="erreur" >
+      <p  >préparation</p>
+      <span id="prepshop"></span>
+  </div>
+ </div>
+ <div class="eco" style="margin-bottom: 200px;">
+  <h1 >Gourmand</h1>
+  <br>
+  <div >
+    <img src="res/20.png" alt="erreur" >
+    <p  >transport</p>
+    <span id="trangour"></span> 
+  </div>
+  <div >
+    <img src="res/10.png" alt="erreur" >
+      <p  >Logement</p>
+      <span id="loggour"></span>
+  </div>
+  <div >
+    <img src="res/10.png" alt="erreur" >
+      <p  >argent de poche</p>
+      <span id="argour"></span>
+  </div>
+  <div >
+    <img src="res/50_percent-512.png" alt="erreur" >
+      <p >nourriture</p>
+      <span id="nourgour"></span> 
+  </div>
+  <div >
+    <img src="res/10.png" alt="erreur" >
+      <p>préparation</p>
+      <span id="prepgour"></span>
+  </div>
+ </div>
+ 
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+  <script type="text/javascript">
+  function sumvalues(){
+var num1 , dix, vingt ,trent ,quarent, sinq;
+num1=Number(document.getElementById("txtnum1").value);
+dix=num1*10/100;
+vingt=num1*20/100;
+sinq=num1*50/100;
+document.getElementById("tranlux").innerHTML =dix;
+document.getElementById("preplux").innerHTML =dix;
+document.getElementById("nourlux").innerHTML =dix;
+document.getElementById("arglux").innerHTML =vingt;
+document.getElementById("loglux").innerHTML =sinq;
+document.getElementById("transhop").innerHTML =dix;
+document.getElementById("logshop").innerHTML =vingt;
+document.getElementById("argshop").innerHTML =sinq;
+document.getElementById("nourshop").innerHTML =dix;
+document.getElementById("prepshop").innerHTML =dix;
+document.getElementById("trangour").innerHTML =vingt;
+document.getElementById("loggour").innerHTML =dix;
+document.getElementById("argour").innerHTML =dix;
+document.getElementById("nourgour").innerHTML =sinq;
+document.getElementById("prepgour").innerHTML =dix;
+  }
+  function cal(){
+var num1 ,sum1 , sum;
+num1=Number(document.getElementById("sum1").value);
+sum1=0;
+sum1=Number(document.getElementById("sum").value);
+sum=num1+sum1;
+document.getElementById("sum").innerHTML=sum;
+
+  }
+
+  </script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="icon" href="res/2.png" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBWBRkgm7yvKzuqSB5Z7-2dOErWSx2Sh9s",
+    authDomain: "projet-e427c.firebaseapp.com",
+    databaseURL: "https://projet-e427c.firebaseio.com",
+    projectId: "projet-e427c",
+    storageBucket: "projet-e427c.appspot.com",
+    messagingSenderId: "261264655624",
+    appId: "1:261264655624:web:1ce19333010651a5e4d8bd",
+    measurementId: "G-TXJYRR7VXK"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  function mapping(){
+  firebase.database().ref("user").set({
+ nom: document.getElementById ("1").value,
+ prenom: document.getElementById ("2").value ,
+ mail: document.getElementById ("3").value ,
+ motdepasse: document.getElementById ("4").value ,
+ adresse1: document.getElementById ("5").value ,
+ adresse2: document.getElementById ("6").value ,
+ city: document.getElementById ("7").value ,
+});}
+
+</script>
+
+<body >
+  <header  >
+    <nav class="navbar navbar-light bg-light justify-content-between">
+      <a class="navbar-brand" >vacance</a>
+      <form class="form-inline" >
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           mon compte
+          </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <a class="dropdown-item" href="inscrip.html">inscription</a>
+          <a class="dropdown-item" href="connex.html">connexion</a>
+        </div>
+      </div>
+      </form>
+    </nav>
+    
+    <nav class="navbar">
+      <ul class="nav justify-content-center"  >
+        <li class="nav-item" >
+          <a class="nav-link active" href="index.html" >home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="maison lux.html" >maison d hote</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hhh.html" >shopping</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html" >Parc</a>
+        </li>
+      </ul>
+    </nav>
+    </header>
+  
+<div class="form">
+    <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Nom</label>
+            <input type="text" class="form-control" id="1"  required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">prenom</label>
+            <input type="text" class="form-control" id="2"  required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="3">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">mot de passe</label>
+            <input type="password" class="form-control" id="4">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="5" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="6" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="7">
+          </div>
+
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="mapping()">inscription</button>
+      </form>
+    </div>
+
+<div class="footer">
+  <p>Contactez-nous par mail ou appelez-nous. Nous serons heureux de vous répondre.</p>
+</div>
+
+  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      </body>
+</html>
